@@ -39,9 +39,11 @@ public class Program {
 				double customFee = sc.nextDouble();
 				Product product = new ImportedProduct(name, price, customFee);
 				products.add(product);
-			} else {
+			} else if (tag == 'c') {
 				Product product = new Product(name, price);
 				products.add(product);
+			} else {
+				System.out.println("Product tag not founded!");
 			}
 		}
 		
